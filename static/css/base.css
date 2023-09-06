@@ -6,3 +6,244 @@ header a {
     flex-grow: 1;
     text-align: center;
 }
+
+/* Create a container with flex layout */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for individual images */
+.image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin: 5px; /* Add some spacing between images */
+    position: relative;
+}
+
+/* Use absolute positioning to control image placement */
+.image:nth-child(1) {
+    width: 60%;
+}
+
+.image:nth-child(2) {
+    width: 20%;
+}
+
+.image:nth-child(3) {
+    width: 40%;
+    order: 3; /* Change the order to control positioning */
+}
+
+.image:nth-child(4) {
+    width: 40%;
+    order: 4; /* Change the order to control positioning */
+}
+
+.image:nth-child(5) {
+    width: 40%;
+}
+
+.image:nth-child(6) {
+    width: 40%;
+}
+
+/* Style for individual images */
+.image-grupal {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin: 5px; /* Add some spacing between images */
+    position: relative;
+}
+
+/* Use absolute positioning to control image placement */
+.image-grupal:nth-child(1) {
+    width: 80%;
+}
+
+.image-grupal:nth-child(2) {
+    width: 50%;
+}
+
+.image-grupal:nth-child(3) {
+    width: 50%;
+    order: 2; /* Change the order to control positioning */
+}
+
+/* Style for individual images */
+.image-triple {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin: 5px; /* Add some spacing between images */
+    position: relative;
+}
+
+/* Use absolute positioning to control image placement */
+.image-triple:nth-child(1) {
+    width: 80%;
+}
+
+.image-triple:nth-child(2) {
+    width: 50%;
+}
+
+/* Style for individual images */
+.image-doble {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin: 5px; /* Add some spacing between images */
+    position: relative;
+}
+
+/* Use absolute positioning to control image placement */
+.image-doble:nth-child(1) {
+    width: 80%;
+}
+
+.image-doble:nth-child(2) {
+    width: 50%;
+}
+
+.image-doble:nth-child(3) {
+    width: 50%;
+    order: 2; /* Change the order to control positioning */
+}
+
+/* Style for individual images */
+.image-simple {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin: 5px; /* Add some spacing between images */
+    position: relative;
+}
+
+/* Use absolute positioning to control image placement */
+.image-simple:nth-child(1) {
+    width: 80%;
+}
+
+.image-simple:nth-child(2) {
+    width: 50%;
+}
+
+.image-simple:nth-child(3) {
+    width: 50%;
+    order: 2; /* Change the order to control positioning */
+}
+
+/* Style for individual images */
+.image-gastro {
+    max-width: 50%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin: 5px; /* Add some spacing between images */
+    position: relative;
+}
+
+/* Use absolute positioning to control image placement */
+.image-gastro:nth-child(1) {
+    width: 100%;
+}
+
+.image-gastro:nth-child(2) {
+    width: 50%;
+}
+
+.image-gastro:nth-child(3) {
+    width: 50%;
+    order: 3; /* Change the order to control positioning */
+}
+
+.image-gastro:nth-child(4) {
+    width: 40%;
+    order: 4; /* Change the order to control positioning */
+}
+
+.image-gastro:nth-child(5) {
+    width: 40%;
+}
+
+.image-gastro:nth-child(6) {
+    width: 40%;
+}
+
+.image-gastro:nth-child(7) {
+    width: 40%;
+}
+
+.image-gastro:nth-child(8) {
+    width: 100%;
+}
+
+/* Style for individual images */
+.image-expe {
+    max-width: 50%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin: 5px; /* Add some spacing between images */
+    position: relative;
+}
+
+/* Use absolute positioning to control image placement */
+.image-expe:nth-child(1) {
+    width: 30%;
+}
+
+.image-expe:nth-child(2) {
+    width: 50%;
+}
+
+.image-expe:nth-child(3) {
+    width: 50%;
+    order: 3; /* Change the order to control positioning */
+}
+
+.image-expe:nth-child(4) {
+    width: 40%;
+    order: 4; /* Change the order to control positioning */
+}
+
+.image-expe:nth-child(5) {
+    width: 40%;
+}
+
+.image-expe:nth-child(6) {
+    width: 20%;
+}
+
+.image-expe:nth-child(7) {
+    width: 20%;
+}
+
+.image-expe:nth-child(8) {
+    width: 40%;
+}
+
+.image-expe:nth-child(9) {
+    width: 60%;
+}
+
+.image-expe:nth-child(10) {
+    width: 40%;
+}
+
+.image-expe:nth-child(11) {
+    width: 60%;
+}
+
+.image-expe:nth-child(12) {
+    width: 40%;
+}
+
+.image-expe:nth-child(13) {
+    width: 40%;
+}
+
+.image-expe:nth-child(14) {
+    width: 40%;
+}

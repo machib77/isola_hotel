@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}{% load static %}
+<div class="container-fluid py-5">
+  <h2>Habitación Simple</h2>
+  <div class="image-container">
+    <img
+      class="image-simple"
+      src="{% static 'img/habitaciones/simple/simple_01.jpg' %}"
+      alt="simple_01"
+    />
+    <img
+      class="image-simple"
+      src="{% static 'img/habitaciones/simple/simple_02.jpg' %}"
+      alt="simple_02"
+    />
+    <img
+      class="image-simple"
+      src="{% static 'img/habitaciones/simple/simple_03.jpg' %}"
+      alt="simple_03"
+    />
+  </div>
+</div>
+{% endblock content %}

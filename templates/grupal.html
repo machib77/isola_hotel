@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}{% load static %}
+<div class="container-fluid py-5">
+  <h2>Habitación Grupal</h2>
+  <div class="image-container">
+    <img
+      class="image-grupal"
+      src="{% static 'img/habitaciones/grupal/grupal_01.jpg' %}"
+      alt="grupal_01"
+    />
+    <img
+      class="image-grupal"
+      src="{% static 'img/habitaciones/grupal/grupal_02.jpg' %}"
+      alt="grupal_02"
+    />
+    <img
+      class="image-grupal"
+      src="{% static 'img/habitaciones/grupal/grupal_03.jpg' %}"
+      alt="grupal_03"
+    />
+  </div>
+</div>
+{% endblock content %}

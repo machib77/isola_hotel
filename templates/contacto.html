@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% block content %} {% load static %} {% comment %}
+Comment {% endcomment %} {%load bootstrap_icons %}
+<div class="container-fluid py-5">
+  <div class="container text-center">
+    <h1>Contáctanos</h1>
+  </div>
+  <div
+    class="center-container d-flex justify-content-center align-items-center"
+  >
+    <div class="col-md-6 mb-4">
+      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+        <h2>{% bs_icon 'geo-alt-fill' size='1.0em' %} Dirección</h2>
+        <p>
+          Barrio Villa Guadalupe (paralela a Av. Bolívar), S/N. Aiquile,
+          Cochabamba, Bolivia.
+        </p>
+        <br />
+        <h2>{% bs_icon 'whatsapp' size='1.0em' %} Reservas</h2>
+        <a href="https://wa.me/59177115559">+591 77115559</a>
+        <br />
+        <br />
+        <h2>{% bs_icon 'envelope-at-fill' size='1.0em' %} Email</h2>
+        <p>vindabalderrama@gmail.com</p>
+        <br />
+
+        <h2>
+          <img
+            src="{% static 'img/airbnb.png' %}"
+            alt="grupal_03"
+            class="img-fluid"
+            style="max-width: 7%; height: auto"
+          />Airbnb
+        </h2>
+        <a href="https://air.tl/lUtX4KQE">https://air.tl/lUtX4KQE</a>
+        <br />
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <h1>Síguenos en redes</h1>
+  </div>
+  <div
+    class="center-container d-flex justify-content-center align-items-center"
+  >
+    <div class="col-md-6 mb-4 text-center">
+      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+        <a
+          href="https://www.facebook.com/hotel.isola.aiquile"
+          style="text-decoration: none"
+          target="_blank"
+          >{% bs_icon 'facebook' size='3.0em' %}</a
+        >
+
+        <a
+          href="https://www.tiktok.com/@isolahotel"
+          style="text-decoration: none"
+          target="_blank"
+          ><img
+            src="{% static 'img/tiktok.png' %}"
+            alt="grupal_03"
+            class="img-fluid"
+            style="max-width: 4.3em; height: auto"
+        /></a>
+
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

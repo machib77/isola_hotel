@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}{% load static %}
+<div class="container-fluid py-5">
+  <h2>Habitación Triple</h2>
+  <div class="image-container">
+    <img
+      class="image-triple"
+      src="{% static 'img/habitaciones/triple/triple_01.jpg' %}"
+      alt="triple_01"
+    />
+    <img
+      class="image-triple"
+      src="{% static 'img/habitaciones/triple/triple_02.jpg' %}"
+      alt="triple_02"
+    />
+  </div>
+</div>
+{% endblock content %}
