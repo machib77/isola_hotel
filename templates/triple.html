@@ -1,16 +1,20 @@
 {% extends 'base.html' %} {% block content %}{% load static %}
-<div class="container-fluid py-5">
+<div class="col-md-8 mx-auto">
+  <br />
+  <br />
   <h2>Habitación Triple</h2>
   <div class="image-container">
     <img
       class="image-triple"
       src="{% static 'img/habitaciones/triple/triple_01.jpg' %}"
       alt="triple_01"
+      style="max-width: 60%; height: auto"
     />
     <img
       class="image-triple"
       src="{% static 'img/habitaciones/triple/triple_02.jpg' %}"
       alt="triple_02"
+      style="max-width: 60%; height: auto"
     />
   </div>
 </div>

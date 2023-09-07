@@ -1,4 +1,5 @@
-{% extends 'base.html' %} {% block content %} {% load static %}
+{% extends 'base.html' %} {% block content %} {% load static %}{% comment %}
+Comment {% endcomment %} {%load bootstrap_icons %}
 
 <div class="container-fluid py-5">
   <div class="container text-center">
@@ -7,6 +8,135 @@
     <h2>Bienvenido al Hotel Isola</h2>
     <br />
   </div>
+  
+
+  <div class="col-md-8 mx-auto">
+    <br />
+    <p><b>Sobre Nuestro Hotel</b></p>
+    <p>
+      Sumérgete en nuestro encantador hotel rústico en Aiquile. Desayuno buffet,
+      calefacción y minibar en un entorno acogedor. Vive la autenticidad en Hotel Isola.
+    </p>
+    <ul>
+      <li>
+        Nuestro lobby acogedor es un lugar ideal para relajarse y socializar.
+      Siéntanse libres de utilizar estas áreas para conversar o leer.
+      </li>
+      <li>
+        Nuestro restaurante, el lugar perfecto para disfrutar de nuestro delicioso
+      desayuno buffet y otras opciones gastronómicas.
+      </li>
+      <li>
+        Si desean organizar eventos o reuniones, nuestro salón es un espacio
+      versátil a su disposición.
+      </li>
+      <li>
+        Nuestro servicio de taxi está disponible para sus necesidades de
+      transporte local.
+      </li>
+    </ul>
+    
+    <p>
+      El Hotel Isola le oferece el mejor hospedaje, a los mejores precios, para
+      que disfrute al máximo de una estancia como en casa.
+    </p>
+    <p>Contamos con áreas verdes y otras áreas comunes 🍀🌿🌴🌳🏜</p>
+    <div class="two-column-container">
+      <div class="column">
+        <p><b>NUESTRAS HABITACIONES:</b></p>
+        <p>
+          ✅️ Individuales (camas de 2 plazas) <br />
+          ✅️ Matrimoniales <br />
+          ✅️ Especial "tipo suit" (cama de 3 plazas) <br />
+          ✅️ Dobles (con camas de 2 plazas) <br />
+          ✅️ Triples <br />
+          ✅ Cuatrúple <br />
+          ✅ Familiares <br />
+          ✅️ Cuna para tu bebé <br />
+          🚨 Toda habitación cuenta con baño privado 🛁
+        </p>
+      </div>
+      <div class="column">
+        <p><b>SERVICIOS:</b></p>
+        <p>
+          🌐 Wi-Fi<br />
+          🖥 Tv por cable <br />
+          ☕️ Desayuno bufet <br />
+          🚖 Radio taxi <br />
+          🚍 Trufis o flotas para delegaciones <br />
+          🚕 Garaje privado <br />
+          🚿 Ducha con agua caliente <br />
+          🔥 Agua caliente en el lavamanos <br />
+          ♨️ Calefacción portátil (a pedido)<br />
+          🍝 Katerin nacional e internacional <br />
+          🎊 Salón de eventos <br />
+          🍸 Mini bar<br />
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8 mx-auto">
+    <div class="two-column-container">
+      <div class="column">
+        <img
+          src="{% static 'img/sobre_hotel/hotel_01.jpg' %}"
+          alt="hotel_01"
+          class="img-fluid"
+          style="max-width: 100%; height: auto"
+        />
+        <br>
+        <br>
+
+        <img
+          src="{% static 'img/sobre_hotel/hotel_02.jpg' %}"
+          alt="hotel_02"
+          class="img-fluid"
+          style="max-width: 100%; height: auto"
+        />
+        <br>
+        <br>
+
+        <img
+          src="{% static 'img/sobre_hotel/hotel_03.jpg' %}"
+          alt="hotel_03"
+          class="img-fluid"
+          style="max-width: 100%; height: auto"
+        />
+        <br>
+        <br>
+
+      </div>
+      <div class="column">
+        <img
+          src="{% static 'img/sobre_hotel/hotel_04.jpg' %}"
+          alt="hotel_04"
+          class="img-fluid"
+          style="max-width: 100%; height: auto"
+        />
+        <br>
+        <br>
+        <img
+          src="{% static 'img/sobre_hotel/hotel_05.jpg' %}"
+          alt="hotel_05"
+          class="img-fluid"
+          style="max-width: 100%; height: auto"
+        />
+        <br>
+        <br>
+        <img
+          src="{% static 'img/sobre_hotel/hotel_06.jpg' %}"
+          alt="hotel_06"
+          class="img-fluid"
+          style="max-width: 100%; height: auto"
+        />
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div> 
+
   <div class="col-md-8 mx-auto">
     <p><b>Sobre Aiquile</b></p>
     <p>
@@ -26,7 +156,7 @@
     <br />
   </div>
 
-  <div class="col-md-10 mx-auto">
+  <div class="col-md-8 mx-auto">
     <div class="row mb-3">
       <div class="col-md-6">
         <img
@@ -83,89 +213,193 @@
     </div>
   </div>
 
-  <div class="col-md-8 mx-auto">
+  <br />
+  <div class="container text-center">
+    <h4>Comentarios de nuestros huéspedes en Google:</h4>
     <br />
-    <p><b>Sobre Nuestro Hotel</b></p>
-    <p>
-      Sumérgete en nuestro encantador hotel rústico en Aiquile. Desayuno buffet,
-      calefacción y minibar en un entorno acogedor. Explora con comodidad
-      gracias a nuestro servicio de taxi. Añade un toque especial a tus eventos
-      en nuestro salón. Vive la autenticidad en Hotel Isola.
-    </p>
-    <p>
-      Nuestro lobby acogedor es un lugar ideal para relajarse y socializar.
-      Siéntanse libres de utilizar estas áreas para conversar o leer.
-    </p>
-    <p>
-      Nuestro restaurante, el lugar perfecto para disfrutar de nuestro delicioso
-      desayuno buffet y otras opciones gastronómicas.
-    </p>
-    <p>
-      Si desean organizar eventos o reuniones, nuestro salón es un espacio
-      versátil a su disposición.
-    </p>
-    <p>
-      Nuestro servicio de taxi está disponible para sus necesidades de
-      transporte local.
-    </p>
+  </div>
+  <div class="col-md-8 mx-auto">
+    <div class="two-column-container">
+      <div class="column">
+        <div class="h-100 p-3 bg-body-tertiary border rounded-3">
+          <div class="two-column-container">
+            <div class="column">
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="column">
+              <div style="flex-grow: 1; text-align: right">
+                <img
+                  src="{% static 'img/google.png' %}"
+                  alt="google_logo"
+                  class="img-fluid"
+                  style="max-width: 15%; height: auto"
+                />
+              </div>
+            </div>
+          </div>
+          <p>
+            <img src="{% static 'img/reviews/reviews_01.png' %}" alt="" /><b>
+              Blankiz Manrique</b
+            >
+          </p>
+          <p>
+            comentado en
+            <a target="_blank" href="https://goo.gl/maps/6aLtDn7GKjPLAkxV7"
+              >Google</a
+            >
+          </p>
+          <p>
+            Excelente atención, muy limpio, ambientes agradables; personal muy
+            amable
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="h-100 p-3 bg-body-tertiary border rounded-3">
+          <div class="two-column-container">
+            <div class="column">
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="column">
+              <div style="flex-grow: 1; text-align: right">
+                <img
+                  src="{% static 'img/google.png' %}"
+                  alt="google_logo"
+                  class="img-fluid"
+                  style="max-width: 15%; height: auto"
+                />
+              </div>
+            </div>
+          </div>
+          <p>
+            <img src="{% static 'img/reviews/reviews_02.png' %}" alt="" /><b>
+              Minervita Zilveti Carballo</b
+            >
+          </p>
+          <p>
+            comentado en
+            <a target="_blank" href="https://goo.gl/maps/GmsZqc3Mr8ymuTB56"
+              >Google</a
+            >
+          </p>
+          <p>Muy limpio, excelente atención!</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="two-column-container">
+      <div class="column">
+        <div class="h-100 p-3 bg-body-tertiary border rounded-3">
+          <div class="two-column-container">
+            <div class="column">
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="column">
+              <div style="flex-grow: 1; text-align: right">
+                <img
+                  src="{% static 'img/google.png' %}"
+                  alt="google_logo"
+                  class="img-fluid"
+                  style="max-width: 15%; height: auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          <p>
+            <img src="{% static 'img/reviews/reviews_03.png' %}" alt="" /><b>
+              Franco Rios Flores</b
+            >
+          </p>
+          <p>
+            comentado en
+            <a target="_blank" href="https://goo.gl/maps/wVsT68Wn8NfHb2yz8"
+              >Google</a
+            >
+          </p>
+          <p>
+            Es un buen hotel las habitaciones son geniales y tiene una buena
+            discoteca para bailar
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="h-100 p-3 bg-body-tertiary border rounded-3">
+          <div class="two-column-container">
+            <div class="column">
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="column">
+              <div style="flex-grow: 1; text-align: right">
+                <img
+                  src="{% static 'img/google.png' %}"
+                  alt="google_logo"
+                  class="img-fluid"
+                  style="max-width: 15%; height: auto"
+                />
+              </div>
+            </div>
+          </div>
+          <p>
+            <img src="{% static 'img/reviews/reviews_04.png' %}" alt="" /><b>
+              Karmen Sheyla Suarez</b
+            >
+          </p>
+          <p>
+            comentado en
+            <a target="_blank" href="https://goo.gl/maps/x3Nd4BdBoDwocKKf9"
+              >Google</a
+            >
+          </p>
+          <p>
+            Las mejores habitaciones con las mejores camas!!! Gracias Hotel
+            Isola !!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="container text-center">
+      <h4>Comentarios de nuestros huéspedes en Facebook:</h4>
+      <br />
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdelicia.laimerodriguez%2Fposts%2Fpfbid0pWG2HybsAsTUPkM1zFez5uw9ZkpZUHEz3BjU2ggN496eTdhDB3kZWGzeT4iHvKebl&show_text=true&width=500"
+        width="100%"
+        height="194"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+      <br>
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjenny.arandia.7%2Fposts%2Fpfbid0WaUEcNmeAYhMrKHSWeQXxixNcvFLHC4bbGYz5euC95rQN6rt5xaYwuCztUF775tjl&show_text=true&width=500"
+        width="100%"
+        height="208"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <br>
+      <br>
+
+
+    </div>
+
+
+    
+
+
+    
+
   </div>
 
-  <div class="col-md-10 mx-auto">
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <img
-          src="{% static 'img/sobre_hotel/hotel_01.jpg' %}"
-          alt="hotel_01"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
-      </div>
-      <div class="col-md-6">
-        <img
-          src="{% static 'img/sobre_hotel/hotel_02.jpg' %}"
-          alt="hotel_02"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
-      </div>
-    </div>
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <img
-          src="{% static 'img/sobre_hotel/hotel_03.jpg' %}"
-          alt="hotel_03"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
-      </div>
-      <div class="col-md-6">
-        <img
-          src="{% static 'img/sobre_hotel/hotel_04.jpg' %}"
-          alt="hotel_04"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
-      </div>
-    </div>
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <img
-          src="{% static 'img/sobre_hotel/hotel_05.jpg' %}"
-          alt="hotel_05"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
-      </div>
-      <div class="col-md-6">
-        <img
-          src="{% static 'img/sobre_hotel/hotel_06.jpg' %}"
-          alt="hotel_06"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
-      </div>
-    </div>
+  
   </div>
+  {% endblock content %}
 </div>
-
-{% endblock content %}
