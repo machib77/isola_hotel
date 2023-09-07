@@ -35,14 +35,15 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
 
-              <a class="text-center" href="{% url 'home' %}">
-                <img
-                  src="{% static 'img/isola_logo.png' %}"
-                  alt="Isola_Logo"
-                  class="img-fluid"
-                  style="max-width: 15%; height: auto"
-                />
-              </a>
+              <div class="logo-container text-center">
+                <a class="text-center" href="{% url 'home' %}">
+                  <img
+                    src="{% static 'img/isola_logo.png' %}"
+                    alt="Isola_Logo"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
 
               <!-- Si algún día quisiera poner también en inglés -->
               {% comment %}

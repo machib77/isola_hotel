@@ -136,117 +136,7 @@ header a {
     order: 2; /* Change the order to control positioning */
 }
 
-/* Style for individual images */
-.image-gastro {
-    max-width: 50%;
-    height: auto;
-    border: 2px solid #ccc;
-    margin: 5px; /* Add some spacing between images */
-    position: relative;
-}
 
-/* Use absolute positioning to control image placement */
-.image-gastro:nth-child(1) {
-    width: 100%;
-}
-
-.image-gastro:nth-child(2) {
-    width: 50%;
-}
-
-.image-gastro:nth-child(3) {
-    width: 50%;
-    order: 3; /* Change the order to control positioning */
-}
-
-.image-gastro:nth-child(4) {
-    width: 40%;
-    order: 4; /* Change the order to control positioning */
-}
-
-.image-gastro:nth-child(5) {
-    width: 40%;
-}
-
-.image-gastro:nth-child(6) {
-    width: 40%;
-}
-
-.image-gastro:nth-child(7) {
-    width: 40%;
-}
-
-.image-gastro:nth-child(8) {
-    width: 100%;
-}
-
-/* Style for individual images */
-.image-expe {
-    max-width: 50%;
-    height: auto;
-    border: 2px solid #ccc;
-    margin: 5px; /* Add some spacing between images */
-    position: relative;
-}
-
-/* Use absolute positioning to control image placement */
-.image-expe:nth-child(1) {
-    width: 30%;
-}
-
-.image-expe:nth-child(2) {
-    width: 50%;
-}
-
-.image-expe:nth-child(3) {
-    width: 50%;
-    order: 3; /* Change the order to control positioning */
-}
-
-.image-expe:nth-child(4) {
-    width: 40%;
-    order: 4; /* Change the order to control positioning */
-}
-
-.image-expe:nth-child(5) {
-    width: 40%;
-}
-
-.image-expe:nth-child(6) {
-    width: 20%;
-}
-
-.image-expe:nth-child(7) {
-    width: 20%;
-}
-
-.image-expe:nth-child(8) {
-    width: 40%;
-}
-
-.image-expe:nth-child(9) {
-    width: 60%;
-}
-
-.image-expe:nth-child(10) {
-    width: 40%;
-}
-
-.image-expe:nth-child(11) {
-    width: 60%;
-}
-
-.image-expe:nth-child(12) {
-    width: 40%;
-}
-
-.image-expe:nth-child(13) {
-    width: 40%;
-}
-
-.image-expe:nth-child(14) {
-    width: 40%;
-}
 
 .two-column-container {
     display: flex;
@@ -277,5 +167,18 @@ header a {
     width: 100%;
     height: 100%;
     border: 0;
+  }
+
+  /* Your existing CSS for larger screens */
+.logo-container img {
+    max-width: 15%;
+    height: auto;
+  }
+  
+  /* Responsive logo sizing for smaller screens (e.g., mobile) */
+  @media (max-width: 768px) {
+    .logo-container img {
+      max-width: 50%; /* Adjust the value as needed */
+    }
   }
 

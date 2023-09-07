@@ -1,51 +1,81 @@
 {% extends 'base.html' %} {% block content %}{% load static %}
 <div class="container-fluid py-5">
-  <div class="container text-center">
-    <h2>Bar y Restaurant</h2>
-    <h6>Ofrecemos Comidas y Bebidas Exquisitas</h6>
-  </div>
+  <div class="col-md-8 mx-auto">
+    <div class="container text-center">
+      <h2>Bar y Restaurant</h2>
+      <h6>Ofrecemos Comidas y Bebidas Exquisitas</h6>
+    </div>
 
-  <div class="image-container">
-    <img
-      class="image-gastro"
-      src="{% static 'img/gastronomia/gastronomia_01.jpg' %}"
-      alt="gastronomia_01"
-    />
-    <img
-      class="image-gastro"
-      src="{% static 'img/gastronomia/gastronomia_02.jpg' %}"
-      alt="gastronomia_02"
-    />
-    <img
-      class="image-gastro"
-      src="{% static 'img/gastronomia/gastronomia_03.jpg' %}"
-      alt="gastronomia_03"
-    />
-    <img
-      class="image-gastro"
-      src="{% static 'img/gastronomia/gastronomia_04.jpg' %}"
-      alt="gastronomia_04"
-    />
-    <img
-      class="image-gastro"
-      src="{% static 'img/gastronomia/gastronomia_05.jpg' %}"
-      alt="gastronomia_05"
-    />
-    <img
-      class="image-gastro"
-      src="{% static 'img/gastronomia/gastronomia_06.jpg' %}"
-      alt="gastronomia_06"
-    />
-    <img
-      class="image-gastro"
-      src="{% static 'img/gastronomia/gastronomia_07.jpg' %}"
-      alt="gastronomia_07"
-    />
-    <img
-      class="image-gastro"
-      src="{% static 'img/gastronomia/gastronomia_08.jpg' %}"
-      alt="gastronomia_08"
-    />
+    <div class="two-column-container">
+      <div class="column">
+        <img
+          class="img-fluid"
+          src="{% static 'img/gastronomia/gastronomia_01.jpg' %}"
+          alt="gastronomia_01"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <br />
+        <img
+          class="img-fluid"
+          src="{% static 'img/gastronomia/gastronomia_02.jpg' %}"
+          alt="gastronomia_02"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <br />
+        <img
+          class="img-fluid"
+          src="{% static 'img/gastronomia/gastronomia_03.jpg' %}"
+          alt="gastronomia_03"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <br />
+        <img
+          class="img-fluid"
+          src="{% static 'img/gastronomia/gastronomia_04.jpg' %}"
+          alt="gastronomia_04"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <br />
+      </div>
+      <div class="column">
+        <img
+          class="img-fluid"
+          src="{% static 'img/gastronomia/gastronomia_05.jpg' %}"
+          alt="gastronomia_05"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <br />
+        <img
+          class="img-fluid"
+          src="{% static 'img/gastronomia/gastronomia_06.jpg' %}"
+          alt="gastronomia_06"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <br />
+        <img
+          class="img-fluid"
+          src="{% static 'img/gastronomia/gastronomia_07.jpg' %}"
+          alt="gastronomia_07"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <br />
+        <img
+          class="img-fluid"
+          src="{% static 'img/gastronomia/gastronomia_08.jpg' %}"
+          alt="gastronomia_08"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <br />
+      </div>
+    </div>
   </div>
 </div>
 {% endblock content %}
