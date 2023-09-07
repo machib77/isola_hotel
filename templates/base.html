@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %}{%load bootstrap_icons %}
 <html>
   <head>
     <title>Hotel Isola</title>
@@ -67,8 +67,12 @@
                 class="d-flex flex-row justify-content-end align-items-center ml-auto"
               >
                 <a href="https://wa.me/59177115559" target="_blank"
-                  ><button class="btn btn-outline-success" type="submit">
-                    Reservar
+                  ><button
+                    class="btn btn-success"
+                    type="submit"
+                    style="width: 120px"
+                  >
+                    {% bs_icon 'whatsapp' size='1.5em' %} Reservar
                   </button></a
                 >
               </div>

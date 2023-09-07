@@ -2,40 +2,44 @@
 Comment {% endcomment %} {%load bootstrap_icons %}
 
 <div class="container-fluid py-5">
+  <video autoplay loop muted playsinline>
+    <source src="{% static 'img/intro_video.mp4' %}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
   <div class="container text-center">
     <br />
     <h6>AIQUILE - COCHABAMBA</h6>
     <h2>Bienvenido al Hotel Isola</h2>
     <br />
   </div>
-  
 
   <div class="col-md-8 mx-auto">
     <br />
     <p><b>Sobre Nuestro Hotel</b></p>
     <p>
       Sumérgete en nuestro encantador hotel rústico en Aiquile. Desayuno buffet,
-      calefacción y minibar en un entorno acogedor. Vive la autenticidad en Hotel Isola.
+      calefacción y minibar en un entorno acogedor. Vive la autenticidad en
+      Hotel Isola.
     </p>
     <ul>
       <li>
         Nuestro lobby acogedor es un lugar ideal para relajarse y socializar.
-      Siéntanse libres de utilizar estas áreas para conversar o leer.
+        Siéntanse libres de utilizar estas áreas para conversar o leer.
       </li>
       <li>
-        Nuestro restaurante, el lugar perfecto para disfrutar de nuestro delicioso
-      desayuno buffet y otras opciones gastronómicas.
+        Nuestro restaurante, el lugar perfecto para disfrutar de nuestro
+        delicioso desayuno buffet y otras opciones gastronómicas.
       </li>
       <li>
         Si desean organizar eventos o reuniones, nuestro salón es un espacio
-      versátil a su disposición.
+        versátil a su disposición.
       </li>
       <li>
         Nuestro servicio de taxi está disponible para sus necesidades de
-      transporte local.
+        transporte local.
       </li>
     </ul>
-    
+
     <p>
       El Hotel Isola le oferece el mejor hospedaje, a los mejores precios, para
       que disfrute al máximo de una estancia como en casa.
@@ -85,8 +89,8 @@ Comment {% endcomment %} {%load bootstrap_icons %}
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
-        <br>
-        <br>
+        <br />
+        <br />
 
         <img
           src="{% static 'img/sobre_hotel/hotel_02.jpg' %}"
@@ -94,8 +98,8 @@ Comment {% endcomment %} {%load bootstrap_icons %}
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
-        <br>
-        <br>
+        <br />
+        <br />
 
         <img
           src="{% static 'img/sobre_hotel/hotel_03.jpg' %}"
@@ -103,9 +107,8 @@ Comment {% endcomment %} {%load bootstrap_icons %}
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
-        <br>
-        <br>
-
+        <br />
+        <br />
       </div>
       <div class="column">
         <img
@@ -114,28 +117,27 @@ Comment {% endcomment %} {%load bootstrap_icons %}
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
-        <br>
-        <br>
+        <br />
+        <br />
         <img
           src="{% static 'img/sobre_hotel/hotel_05.jpg' %}"
           alt="hotel_05"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
-        <br>
-        <br>
+        <br />
+        <br />
         <img
           src="{% static 'img/sobre_hotel/hotel_06.jpg' %}"
           alt="hotel_06"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
-        <br>
-        <br>
-
+        <br />
+        <br />
       </div>
     </div>
-  </div> 
+  </div>
 
   <div class="col-md-8 mx-auto">
     <p><b>Sobre Aiquile</b></p>
@@ -373,7 +375,7 @@ Comment {% endcomment %} {%load bootstrap_icons %}
         allowfullscreen="true"
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
       ></iframe>
-      <br>
+      <br />
       <iframe
         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjenny.arandia.7%2Fposts%2Fpfbid0WaUEcNmeAYhMrKHSWeQXxixNcvFLHC4bbGYz5euC95rQN6rt5xaYwuCztUF775tjl&show_text=true&width=500"
         width="100%"
@@ -384,22 +386,19 @@ Comment {% endcomment %} {%load bootstrap_icons %}
         allowfullscreen="true"
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
       ></iframe>
-
-      <br>
-      <br>
-
-
+      <br />
+      <br />
     </div>
-
-
-    
-
-
-    
-
   </div>
 
-  
+  <br />
+  <div class="container text-center">
+    <p style="font-size: 12px">
+      © 2023 Hotel Isola<br />Diseño
+      <a href="https://wa.me/59172004682">Marcelo Barrero</a>
+    </p>
   </div>
+
+  <script src="{% static 'js/video_control.js' %}"></script>
   {% endblock content %}
 </div>
