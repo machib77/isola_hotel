@@ -1,7 +1,3 @@
-header a {
-    color: green;
-}
-
 .center-brand {
     flex-grow: 1;
     text-align: center;
@@ -170,18 +166,13 @@ header a {
   }
 
   /* Your existing CSS for larger screens */
-.logo-container img {
+  .logo-container img {
     max-width: 15%;
     height: auto;
   }
+
+
   
-  /* Responsive logo sizing for smaller screens (e.g., mobile) */
-  @media (max-width: 375px) {
-    .logo-container img {
-      width: 50%;
-      max-width: 100%; /* Adjust the value as needed */
-    }
-  }
 
   /* Style for the video container */
   .video-container {
@@ -209,7 +200,17 @@ header a {
 /* Media query for mobile devices (adjust the max-width as needed) */
 @media (max-width: 768px) {
     #intro-video {
-        width: 80%; /* Adjust the width as needed for smaller screens */
+        width: 100%; /* Adjust the width as needed for smaller screens */
         max-width: 100%; /* Ensure it doesn't exceed the screen width */
     }
 }
+
+
+
+
+@media (max-width: 768px) {
+    .logo-container img {
+      max-width: 40% !important; /* Use !important to override conflicting styles */
+      height: auto !important; /* Use !important to override conflicting styles */
+    }
+  }

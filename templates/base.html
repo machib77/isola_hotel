@@ -13,116 +13,109 @@
     <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
   </head>
   <body id="body-pd">
-    <div class="container">
-      {% comment %}
-      <header>
-        <a href="{% url 'home' %}">Home</a>
-        <a href="{% url 'about' %}">About</a>
-      </header>
-      {% endcomment %}
-      <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
-          <div class="container">
-            <div class="d-flex align-items-center">
-              <!-- New div for logo -->
-              <button
-                class="navbar-toggler align-items-center h-100"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <header>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <!-- New div for logo -->
+            <button
+              class="navbar-toggler align-items-center h-100"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <div class="logo-container text-center">
-                <a class="text-center" href="{% url 'home' %}">
-                  <img
-                    src="{% static 'img/isola_logo.png' %}"
-                    alt="Isola_Logo"
-                    class="img-fluid"
-                  />
-                </a>
-              </div>
-
-              <!-- Si algún día quisiera poner también en inglés -->
-              {% comment %}
-              <div class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Español
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">English</a></li>
-                </ul>
-              </div>
-              {% endcomment %}
-
-              <div
-                class="d-flex flex-row justify-content-end align-items-center ml-auto"
-              >
-                <a href="https://wa.me/59177115559" target="_blank"
-                  ><button
-                    class="btn btn-success"
-                    type="submit"
-                    style="width: 120px"
-                  >
-                    {% bs_icon 'whatsapp' size='1.5em' %} Reservar
-                  </button></a
-                >
-              </div>
+            <div class="logo-container text-center">
+              <a href="{% url 'home' %}">
+                <img
+                  src="{% static 'img/isola_logo.png' %}"
+                  alt="Isola_Logo"
+                  class="img-fluid"
+                />
+              </a>
             </div>
-          </div>
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'home' %}">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'habitaciones' %}"
-                    >Habitaciones</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'gastronomia' %}"
-                    >Gastronomía</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'experiencias' %}"
-                    >Experiencias</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
-                </li>
+
+            <!-- Si algún día quisiera poner también en inglés -->
+            {% comment %}
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Español
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
               </ul>
             </div>
+            {% endcomment %}
+
+            <div
+              class="d-flex flex-row justify-content-end align-items-center ml-auto"
+            >
+              <a href="https://wa.me/59177115559" target="_blank"
+                ><button
+                  class="btn btn-success"
+                  type="submit"
+                  style="width: 120px"
+                >
+                  {% bs_icon 'whatsapp' size='1.5em' %} Reservar
+                </button></a
+              >
+            </div>
           </div>
-        </nav>
-      </header>
-    </div>
+        </div>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'habitaciones' %}"
+                  >Habitaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'gastronomia' %}"
+                  >Gastronomía</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'experiencias' %}"
+                  >Experiencias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main style="margin-top: 80px">
       {% block content %}{% endblock content %}
