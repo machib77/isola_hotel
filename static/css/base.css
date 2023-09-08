@@ -178,7 +178,8 @@ header a {
   /* Responsive logo sizing for smaller screens (e.g., mobile) */
   @media (max-width: 375px) {
     .logo-container img {
-      max-width: 80%; /* Adjust the value as needed */
+      width: 50%;
+      max-width: 100%; /* Adjust the value as needed */
     }
   }
 
@@ -201,7 +202,7 @@ header a {
 
   /* Default styles for the video */
 #intro-video {
-    width: 100%; /* Full width by default */
+    width: 65%; /* Full width by default */
     max-width: 100%; /* Ensure the video doesn't exceed the screen width */
 }
 
