@@ -200,7 +200,7 @@ header a {
   }
 
   /* Media query for smaller screens */
-  @media (max-width: 768px) {
+  @media (max-width: 375px) {
     .video-container video {
       width: auto; /* Allow the video to scale down */
       height: auto;
