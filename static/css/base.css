@@ -199,18 +199,16 @@ header a {
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
   }
 
-  /* Media query for smaller screens */
-  @media (max-width: 767px) {
-    .video-container video {
-      width: 50%; /* Allow the video to scale down */
-      height: 50%;
-      max-width: 50%; /* Limit the video's maximum width to 100% */
-      max-height: 50%; /* Limit the video's maximum height to 100% */
-    }
-  }
+  /* Default styles for the video */
+#intro-video {
+    width: 100%; /* Full width by default */
+    max-width: 100%; /* Ensure the video doesn't exceed the screen width */
+}
 
-  @media (max-width: 767px) {
-    .container-fluid {
-      max-width: 90%; /* When the screen width is below 768px, use 90% max-width */
+/* Media query for mobile devices (adjust the max-width as needed) */
+@media (max-width: 768px) {
+    #intro-video {
+        width: 80%; /* Adjust the width as needed for smaller screens */
+        max-width: 100%; /* Ensure it doesn't exceed the screen width */
     }
-  }
+}
