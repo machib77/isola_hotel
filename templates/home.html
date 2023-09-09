@@ -93,60 +93,77 @@ Comment {% endcomment %} {%load bootstrap_icons %}
   <div class="col-lg-8 col-md-12 mx-auto">
     <div class="two-column-container">
       <div class="column">
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_hotel/hotel_01.jpg' %}">
+          <img
           src="{% static 'img/sobre_hotel/hotel_01.jpg' %}"
           alt="hotel_01"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
         <br />
         <br />
-
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_hotel/hotel_02.jpg' %}">
+          <img
           src="{% static 'img/sobre_hotel/hotel_02.jpg' %}"
           alt="hotel_02"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
         <br />
         <br />
-
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_hotel/hotel_03.jpg' %}">
+          <img
           src="{% static 'img/sobre_hotel/hotel_03.jpg' %}"
           alt="hotel_03"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
+        
         <br />
         <br />
       </div>
       <div class="column">
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_hotel/hotel_04.jpg' %}">
+          <img
           src="{% static 'img/sobre_hotel/hotel_04.jpg' %}"
           alt="hotel_04"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>        
         <br />
         <br />
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_hotel/hotel_05.jpg' %}">
+          <img
           src="{% static 'img/sobre_hotel/hotel_05.jpg' %}"
           alt="hotel_05"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
+        
         <br />
         <br />
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_hotel/hotel_06.jpg' %}">
+          <img
           src="{% static 'img/sobre_hotel/hotel_06.jpg' %}"
           alt="hotel_06"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
         <br />
         <br />
       </div>
     </div>
+  </div>
+  {% comment%}Modal container for the enlarged image{% endcomment %}
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span class="close-lightbox">&times;</span>
+    <img src="" id="lightbox-image" class="img-fluid" />
   </div>
 
   <div class="col-lg-8 col-md-12 mx-auto">
@@ -171,54 +188,67 @@ Comment {% endcomment %} {%load bootstrap_icons %}
   <div class="col-lg-8 col-md-12 mx-auto">
     <div class="two-column-container">
       <div class="column">
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_aiquile/aiquile_01.jpg' %}">
+          <img
           src="{% static 'img/sobre_aiquile/aiquile_01.jpg' %}"
           alt="aiquile_01"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
         <br />
         <br />
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_aiquile/aiquile_02.jpg' %}">
+          <img
           src="{% static 'img/sobre_aiquile/aiquile_02.jpg' %}"
           alt="aiquile_02"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
         <br />
         <br />
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_aiquile/aiquile_03.jpg' %}">
+          <img
           src="{% static 'img/sobre_aiquile/aiquile_03.jpg' %}"
           alt="aiquile_03"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
+        
         <br />
         <br />
       </div>
       <div class="column">
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_aiquile/aiquile_04.jpg' %}">
+          <img
           src="{% static 'img/sobre_aiquile/aiquile_04.jpg' %}"
           alt="aiquile_04"
           class="img-fluid"
           style="max-width: 100%; height: auto"
-        />
+         />
+        </a>
         <br />
         <br />
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_aiquile/aiquile_05.jpg' %}">
+          <img
           src="{% static 'img/sobre_aiquile/aiquile_05.jpg' %}"
           alt="aiquile_05"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
         <br />
         <br />
-        <img
+        <a class="lightbox-trigger" href="{% static 'img/sobre_aiquile/aiquile_06.jpg' %}">
+          <img
           src="{% static 'img/sobre_aiquile/aiquile_06.jpg' %}"
           alt="aiquile_06"
           class="img-fluid"
           style="max-width: 100%; height: auto"
         />
+        </a>
         <br />
         <br />
       </div>
@@ -379,5 +409,7 @@ Comment {% endcomment %} {%load bootstrap_icons %}
   </div>
 
   <script src="{% static 'js/video_control.js' %}"></script>
+  <script src="{% static 'js/image_zoom.js' %}"></script>
+  
   {% endblock content %}
 </div>
