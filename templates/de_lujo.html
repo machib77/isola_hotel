@@ -1,38 +1,99 @@
 {% extends 'base.html' %} {% block content %}{% load static %}
 <div class="container-fluid py-5">
-  <h2>Habitación de Lujo</h2>
-
-  <div class="image-container">
-    <img
-      class="image"
-      src="{% static 'img/habitaciones/de_lujo/de_lujo_01.jpg' %}"
-      alt="de_lujo_01"
-    />
-    <img
-      class="image"
-      src="{% static 'img/habitaciones/de_lujo/de_lujo_02.jpg' %}"
-      alt="de_lujo_02"
-    />
-    <img
-      class="image"
-      src="{% static 'img/habitaciones/de_lujo/de_lujo_03.jpg' %}"
-      alt="de_lujo_03"
-    />
-    <img
-      class="image"
-      src="{% static 'img/habitaciones/de_lujo/de_lujo_04.jpg' %}"
-      alt="de_lujo_04"
-    />
-    <img
-      class="image"
-      src="{% static 'img/habitaciones/de_lujo/de_lujo_05.jpg' %}"
-      alt="de_lujo_05"
-    />
-    <img
-      class="image"
-      src="{% static 'img/habitaciones/de_lujo/de_lujo_06.jpg' %}"
-      alt="de_lujo_06"
-    />
+  <div class="container text-center">
+    <h2>Habitación de Lujo</h2>
+    <br />
   </div>
+
+  <div class="col-lg-8 col-md-12 mx-auto">
+    <div class="two-column-container">
+      <div class="column">
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/habitaciones/de_lujo/de_lujo_01.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+            src="{% static 'img/habitaciones/de_lujo/de_lujo_01.jpg' %}"
+            alt="de_lujo_01"
+          />
+        </a>
+        <br />
+        <br />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/habitaciones/de_lujo/de_lujo_02.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+            src="{% static 'img/habitaciones/de_lujo/de_lujo_02.jpg' %}"
+            alt="de_lujo_02"
+          />
+        </a>
+        <br />
+        <br />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/habitaciones/de_lujo/de_lujo_03.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+            src="{% static 'img/habitaciones/de_lujo/de_lujo_03.jpg' %}"
+            alt="de_lujo_03"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/habitaciones/de_lujo/de_lujo_04.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+            src="{% static 'img/habitaciones/de_lujo/de_lujo_04.jpg' %}"
+            alt="de_lujo_04"
+          />
+        </a>
+        <br />
+        <br />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/habitaciones/de_lujo/de_lujo_05.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+            src="{% static 'img/habitaciones/de_lujo/de_lujo_05.jpg' %}"
+            alt="de_lujo_05"
+          />
+        </a>
+        <br />
+        <br />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/habitaciones/de_lujo/de_lujo_05.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+            src="{% static 'img/habitaciones/de_lujo/de_lujo_06.jpg' %}"
+            alt="de_lujo_06"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {% comment%}Modal container for the enlarged image{% endcomment %}
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span class="close-lightbox">&times;</span>
+    <img src="" id="lightbox-image" class="img-fluid" />
+  </div>
+
+  <script src="{% static 'js/image_zoom.js' %}"></script>
+  {% endblock content %}
 </div>
-{% endblock content %}

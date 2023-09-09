@@ -1,21 +1,46 @@
 {% extends 'base.html' %} {% block content %}{% load static %}
-<div class="col-md-8 mx-auto">
-  <br />
-  <br />
-  <h2>Habitación Triple</h2>
-  <div class="image-container">
-    <img
-      class="image-triple"
-      src="{% static 'img/habitaciones/triple/triple_01.jpg' %}"
-      alt="triple_01"
-      style="max-width: 60%; height: auto"
-    />
-    <img
-      class="image-triple"
-      src="{% static 'img/habitaciones/triple/triple_02.jpg' %}"
-      alt="triple_02"
-      style="max-width: 60%; height: auto"
-    />
+<div class="container-fluid py-5">
+  <div class="container text-center">
+    <h2>Habitación Triple</h2>
+    <br />
+  </div>
+  <div class="col-lg-8 col-md-12 mx-auto">
+    <div class="two-column-container">
+      <div class="column">
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/habitaciones/triple/triple_01.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+            src="{% static 'img/habitaciones/triple/triple_01.jpg' %}"
+            alt="triple_01"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/habitaciones/triple/triple_02.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+            src="{% static 'img/habitaciones/triple/triple_02.jpg' %}"
+            alt="triple_02"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+      </div>
+    </div>
   </div>
 </div>
+{% comment%}Modal container for the enlarged image{% endcomment %}
+<div id="lightbox-modal" class="lightbox-modal">
+  <span class="close-lightbox">&times;</span>
+  <img src="" id="lightbox-image" class="img-fluid" />
+</div>
+<script src="{% static 'js/image_zoom.js' %}"></script>
 {% endblock content %}

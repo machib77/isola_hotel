@@ -254,3 +254,8 @@ cursor: pointer;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+/* Add padding to the images with the class 'padded-img' */
+.padded-img {
+    padding: 10px !important; /* You can adjust the value as needed */
+  }

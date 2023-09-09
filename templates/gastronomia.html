@@ -8,74 +8,120 @@
 
     <div class="two-column-container">
       <div class="column">
-        <img
-          class="img-fluid"
-          src="{% static 'img/gastronomia/gastronomia_01.jpg' %}"
-          alt="gastronomia_01"
-          style="max-width: 100%; height: auto"
-        />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/gastronomia/gastronomia_01.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            src="{% static 'img/gastronomia/gastronomia_01.jpg' %}"
+            alt="gastronomia_01"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <br />
         <br />
-        <img
-          class="img-fluid"
-          src="{% static 'img/gastronomia/gastronomia_02.jpg' %}"
-          alt="gastronomia_02"
-          style="max-width: 100%; height: auto"
-        />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/gastronomia/gastronomia_02.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            src="{% static 'img/gastronomia/gastronomia_02.jpg' %}"
+            alt="gastronomia_02"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <br />
         <br />
-        <img
-          class="img-fluid"
-          src="{% static 'img/gastronomia/gastronomia_03.jpg' %}"
-          alt="gastronomia_03"
-          style="max-width: 100%; height: auto"
-        />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/gastronomia/gastronomia_03.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            src="{% static 'img/gastronomia/gastronomia_03.jpg' %}"
+            alt="gastronomia_03"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <br />
         <br />
-        <img
-          class="img-fluid"
-          src="{% static 'img/gastronomia/gastronomia_04.jpg' %}"
-          alt="gastronomia_04"
-          style="max-width: 100%; height: auto"
-        />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/gastronomia/gastronomia_04.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            src="{% static 'img/gastronomia/gastronomia_04.jpg' %}"
+            alt="gastronomia_04"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <br />
         <br />
       </div>
       <div class="column">
-        <img
-          class="img-fluid"
-          src="{% static 'img/gastronomia/gastronomia_05.jpg' %}"
-          alt="gastronomia_05"
-          style="max-width: 100%; height: auto"
-        />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/gastronomia/gastronomia_05.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            src="{% static 'img/gastronomia/gastronomia_05.jpg' %}"
+            alt="gastronomia_05"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <br />
         <br />
-        <img
-          class="img-fluid"
-          src="{% static 'img/gastronomia/gastronomia_06.jpg' %}"
-          alt="gastronomia_06"
-          style="max-width: 100%; height: auto"
-        />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/gastronomia/gastronomia_06.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            src="{% static 'img/gastronomia/gastronomia_06.jpg' %}"
+            alt="gastronomia_06"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <br />
         <br />
-        <img
-          class="img-fluid"
-          src="{% static 'img/gastronomia/gastronomia_07.jpg' %}"
-          alt="gastronomia_07"
-          style="max-width: 100%; height: auto"
-        />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/gastronomia/gastronomia_07.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            src="{% static 'img/gastronomia/gastronomia_07.jpg' %}"
+            alt="gastronomia_07"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <br />
         <br />
-        <img
-          class="img-fluid"
-          src="{% static 'img/gastronomia/gastronomia_08.jpg' %}"
-          alt="gastronomia_08"
-          style="max-width: 100%; height: auto"
-        />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/gastronomia/gastronomia_08.jpg' %}"
+        >
+          <img
+            class="img-fluid"
+            src="{% static 'img/gastronomia/gastronomia_08.jpg' %}"
+            alt="gastronomia_08"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <br />
         <br />
       </div>
     </div>
   </div>
 </div>
+{% comment%}Modal container for the enlarged image{% endcomment %}
+<div id="lightbox-modal" class="lightbox-modal">
+  <span class="close-lightbox">&times;</span>
+  <img src="" id="lightbox-image" class="img-fluid" />
+</div>
+<script src="{% static 'js/image_zoom.js' %}"></script>
 {% endblock content %}

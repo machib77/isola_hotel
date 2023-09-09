@@ -4,60 +4,66 @@
     <div class="col-md-6 mb-4">
       <div class="h-100 p-3 bg-body-tertiary border rounded-3">
         <h4>Habitación de Lujo</h4>
-        <img
-          src="{% static 'img/habitaciones/de_lujo/de_lujo_01.jpg' %}"
-          alt="de_lujo_01"
-          class="img-fluid"
-          style="max-height: 100%; width: auto"
-        />
+        <a href="{% url 'de_lujo' %}">
+          <img
+            src="{% static 'img/habitaciones/de_lujo/de_lujo_01.jpg' %}"
+            alt="de_lujo_01"
+            class="img-fluid"
+            style="max-height: 100%; width: auto"
+          />
+        </a>
         <p>1 Cama King</p>
         <a href="{% url 'de_lujo' %}"
           ><button class="btn btn-outline-secondary">Conozca más...</button></a
         >
       </div>
     </div>
-
     <div class="col-md-6 mb-4">
       <div class="h-100 p-3 bg-body-tertiary border rounded-3">
         <h4>Habitación Grupal</h4>
-        <img
-          src="{% static 'img/habitaciones/grupal/grupal_03.jpg' %}"
-          alt="grupal_03"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
+        <a href="{% url 'grupal' %}">
+          <img
+            src="{% static 'img/habitaciones/grupal/grupal_03.jpg' %}"
+            alt="grupal_03"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <p>4 camas dobles</p>
         <a href="{% url 'grupal' %}"
           ><button class="btn btn-outline-secondary">Conozca más...</button></a
         >
       </div>
     </div>
-
     <div class="col-md-6 mb-4">
       <div class="h-100 p-3 bg-body-tertiary border rounded-3">
         <h4>Habitación Triple</h4>
-        <img
-          src="{% static 'img/habitaciones/triple/triple_01.jpg' %}"
-          alt="triple_01"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
+        <a href="{% url 'triple' %}">
+          <img
+            src="{% static 'img/habitaciones/triple/triple_01.jpg' %}"
+            alt="triple_01"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+
         <p>3 camas dobles</p>
         <a href="{% url 'triple' %}"
           ><button class="btn btn-outline-secondary">Conozca más...</button></a
         >
       </div>
     </div>
-
     <div class="col-md-6 mb-4">
       <div class="h-100 p-3 bg-body-tertiary border rounded-3">
         <h4>Habitación Doble</h4>
-        <img
-          src="{% static 'img/habitaciones/doble/doble_01.jpg' %}"
-          alt="doble_01"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
+        <a href="{% url 'doble' %}">
+          <img
+            src="{% static 'img/habitaciones/doble/doble_01.jpg' %}"
+            alt="doble_01"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <p>2 camas dobles</p>
         <a href="{% url 'doble' %}"
           ><button class="btn btn-outline-secondary">Conozca más...</button></a
@@ -68,12 +74,14 @@
     <div class="col-md-6 mb-4">
       <div class="h-100 p-3 bg-body-tertiary border rounded-3">
         <h4>Habitación Simple</h4>
-        <img
-          src="{% static 'img/habitaciones/simple/simple_02.jpg' %}"
-          alt="simple_02"
-          class="img-fluid"
-          style="max-width: 100%; height: auto"
-        />
+        <a href="{% url 'simple' %}">
+          <img
+            src="{% static 'img/habitaciones/simple/simple_02.jpg' %}"
+            alt="simple_02"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
         <p>1 cama doble</p>
         <a href="{% url 'simple' %}"
           ><button class="btn btn-outline-secondary">Conozca más...</button></a
