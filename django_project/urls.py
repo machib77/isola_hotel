@@ -21,5 +21,3 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("pages.urls")),
 ]
-
-# This is a test

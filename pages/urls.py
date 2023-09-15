@@ -12,6 +12,14 @@ from .views import (
     ExperienciasPageView,
 )
 
+from django.contrib.sitemaps.views import sitemap  # Para sitemaps
+from .sitemaps import StaticSitemap  # Para sitemaps
+
+# Para sitemaps
+sitemaps = {
+    "static": StaticSitemap,
+}
+
 urlpatterns = [
     path("", HomePageView.as_view(), name="home"),
     path("contacto/", ContactoPageView.as_view(), name="contacto"),
@@ -23,4 +31,10 @@ urlpatterns = [
     path("habitaciones/simple/", SimplePageView.as_view(), name="simple"),
     path("gastronomia/", GastronomiaPageView.as_view(), name="gastronomia"),
     path("experiencias/", ExperienciasPageView.as_view(), name="experiencias"),
+    path(
+        "sitemap.xml",
+        sitemap,
+        {"sitemaps": sitemaps},
+        name="django.contrib.sitemaps.views.sitemap",
+    ),
 ]

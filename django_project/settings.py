@@ -39,7 +39,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "pages.apps.PagesConfig",
     "django_bootstrap_icons",
+    "django.contrib.sitemaps",  # Para sitemaps
 ]
+
+# Para sitemaps
+SITE_ID = 1
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
