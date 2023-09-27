@@ -1,0 +1,101 @@
+{% extends 'base.html' %} {% block content %}{% load static %}
+<div class="container-fluid py-5">
+  <div class="col-md-8 mx-auto">
+    <div class="container text-center">
+      <h2>Más Imágenes de Nuestro Hotel</h2>
+    </div>
+    <br />
+
+    <div class="two-column-container">
+      <div class="column">
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/imagenes/img_01.jpg' %}"
+        >
+          <img
+            src="{% static 'img/imagenes/img_01.jpg' %}"
+            alt="img_01"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <br />
+        <br />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/imagenes/img_02.jpg' %}"
+        >
+          <img
+            src="{% static 'img/imagenes/img_02.jpg' %}"
+            alt="img_02"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <br />
+        <br />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/imagenes/img_03.jpg' %}"
+        >
+          <img
+            src="{% static 'img/imagenes/img_03.jpg' %}"
+            alt="img_03"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <br />
+        <br />
+      </div>
+      <div class="column">
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/imagenes/img_04.jpg' %}"
+        >
+          <img
+            src="{% static 'img/imagenes/img_04.jpg' %}"
+            alt="img_04"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <br />
+        <br />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/imagenes/img_05.jpg' %}"
+        >
+          <img
+            src="{% static 'img/imagenes/img_05.jpg' %}"
+            alt="img_05"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <br />
+        <br />
+        <a
+          class="lightbox-trigger"
+          href="{% static 'img/imagenes/img_06.jpg' %}"
+        >
+          <img
+            src="{% static 'img/imagenes/img_06.jpg' %}"
+            alt="img_06"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <br />
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+{% comment%}Modal container for the enlarged image{% endcomment %}
+<div id="lightbox-modal" class="lightbox-modal">
+  <span class="close-lightbox">&times;</span>
+  <img src="" id="lightbox-image" class="img-fluid" />
+</div>
+<script src="{% static 'js/image_zoom.js' %}"></script>
+{% endblock content %}

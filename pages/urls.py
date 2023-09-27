@@ -10,6 +10,8 @@ from .views import (
     SimplePageView,
     GastronomiaPageView,
     ExperienciasPageView,
+    ImagenesPageView,
+    VideosPageView,
 )
 
 from django.contrib.sitemaps.views import sitemap  # Para sitemaps
@@ -31,6 +33,8 @@ urlpatterns = [
     path("habitaciones/simple/", SimplePageView.as_view(), name="simple"),
     path("gastronomia/", GastronomiaPageView.as_view(), name="gastronomia"),
     path("experiencias/", ExperienciasPageView.as_view(), name="experiencias"),
+    path("imagenes/", ImagenesPageView.as_view(), name="imagenes"),
+    path("videos/", VideosPageView.as_view(), name="videos"),
     path(
         "sitemap.xml",
         sitemap,

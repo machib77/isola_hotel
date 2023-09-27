@@ -1,0 +1,118 @@
+{% extends 'base.html' %} {% block content %} {% load static %}{% comment %}
+Comment {% endcomment %} {%load bootstrap_icons %}
+<div class="container-fluid py-5">
+  <div class="col-md-8 mx-auto">
+    <div class="container text-center">
+      <h2>Videos</h2>
+    </div>
+    <br />
+
+    <div class="two-column-container">
+      <div class="column">
+        <video
+          id="video_04"
+          controls
+          style="max-width: 100%; height: auto"
+          poster="{% static 'img/videos/video_04.jpg' %}"
+          type="video/mp4"
+        >
+          <source
+            src="{% static 'img/videos/video_04.mp4' %}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <br />
+        <video
+          id="video_06"
+          controls
+          style="max-width: 100%; height: auto"
+          poster="{% static 'img/videos/video_06.jpg' %}"
+          type="video/mp4"
+        >
+          <source
+            src="{% static 'img/videos/video_06.mp4' %}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <br />
+        <video
+          id="video_07"
+          controls
+          style="max-width: 100%; height: auto"
+          poster="{% static 'img/videos/video_07.jpg' %}"
+          type="video/mp4"
+        >
+          <source
+            src="{% static 'img/videos/video_07.mp4' %}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <br />
+        <video
+          id="video_02"
+          controls
+          style="max-width: 100%; height: auto"
+          poster="{% static 'img/videos/video_02.jpg' %}"
+          type="video/mp4"
+        >
+          <source
+            src="{% static 'img/videos/video_02.mp4' %}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <br />
+      </div>
+      <div class="column">
+        <video id="video_05" controls style="max-width: 100%; height: auto">
+          <source
+            src="{% static 'img/videos/video_05.mp4' %}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <br />
+        <video
+          id="video_01"
+          controls
+          style="max-width: 100%; height: auto"
+          poster="{% static 'img/videos/video_01.jpg' %}"
+          type="video/mp4"
+        >
+          <source
+            src="{% static 'img/videos/video_01.mp4' %}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <br />
+
+        <video
+          id="video_03"
+          controls
+          style="max-width: 100%; height: auto"
+          poster="{% static 'img/videos/video_03.jpg' %}"
+          type="video/mp4"
+        >
+          <source
+            src="{% static 'img/videos/video_03.mp4' %}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

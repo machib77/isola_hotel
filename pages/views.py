@@ -42,3 +42,11 @@ class GastronomiaPageView(TemplateView):
 
 class ExperienciasPageView(TemplateView):
     template_name = "experiencias.html"
+
+
+class ImagenesPageView(TemplateView):
+    template_name = "imagenes.html"
+
+
+class VideosPageView(TemplateView):
+    template_name = "videos.html"
