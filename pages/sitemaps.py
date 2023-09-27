@@ -15,6 +15,8 @@ class StaticSitemap(Sitemap):
             "/habitaciones/simple/",
             "/gastronomia/",
             "/experiencias/",
+            "/imagenes/",
+            "/videos/",
         ]  # Add more URLs as needed
 
     def location(self, item):
